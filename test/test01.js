@@ -5,11 +5,11 @@ function geekshubs(index) {
     const getValue = (number) => {
         let result = ''
         if(number % 3 === 0){
-            result = 'Geeks'
+            result += 'Geeks'
         }
 
         if(number % 5 === 0){
-            result = 'Hubs'
+            result += 'Hubs'
         }
 
         if(!result.length){
@@ -19,7 +19,7 @@ function geekshubs(index) {
         return result
     }
     if(index && !isNaN(Number(index))){
-        for (let i = index; index > 0; i--) {
+        for (let i = index; i > 0; i--) {
             counter++
             result += `${getValue(counter)}\n`
         }
